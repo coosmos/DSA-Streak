@@ -5,26 +5,34 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Roboto', sans-serif;
+    background-image: url('resource/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner.jpg');
+    background-size: cover; /* Make background image cover the whole page */
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    padding: 20px;
 }
 
 .container {
-    width: 90%;
+    width: 100%;
     max-width: 800px;
-    margin: 20px;
+    margin: 20px auto;
     padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.2); /* Translucent background */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    transition: box-shadow 0.3s;
 }
 
 h1 {
-    text-align: center;
-    margin-bottom: 20px;
+    text-align: center; /* Center the text */
+    margin: 0; /* Remove margin to keep it at the top */
+    padding-bottom: 20px; /* Add padding below for spacing */
+    color: #fff; /* Change header text color to white */
 }
 
 table {
@@ -35,24 +43,42 @@ table {
 
 th, td {
     padding: 12px;
-    border: 1px solid #ddd;
     text-align: center;
+    transition: background-color 0.3s;
 }
 
 th {
-    background-color: #f2f2f2;
+    background-color: rgba(26, 62, 66, 0.171); /* Semi-transparent header */
+    color: #fff; /* Change header text color to white */
+}
+
+tr {
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.1); /* Lighter glass effect for even rows */
+}
+
+tr:hover {
+    background-color: rgba(95, 95, 236, 0.4); /* Blue glow effect on hover */
 }
 
 td input {
     width: 40px;
     text-align: center;
+    border: none; /* Remove border */
+    border-radius: 4px;
+    padding: 5px;
+    background: rgba(170, 182, 209, 0.6); /* Semi-transparent background for inputs */
+    color: #333; /* Text color for input */
 }
 
 .completed {
-    color: green;
+    color: #28a745; /* Green color for completed */
     font-weight: bold;
 }
 
 .debt {
-    color: red;
+    color: #fafafa; /* Red color for debt */
 }

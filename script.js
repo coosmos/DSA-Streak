@@ -6,7 +6,9 @@ const requiredQuestions = Array(totalDays).fill(questionsPerDay);
 const questionsSolved = new Array(totalDays).fill(0);
 
 // Generate the table dynamically
-const daysTable = document.getElementById("daysTable");
+const daysTable = document
+  .getElementById("daysTable")
+  .getElementsByTagName("tbody")[0];
 let debtArray = new Array(totalDays).fill(0);
 const today = new Date(); // Get today's date
 

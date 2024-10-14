@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>75 Day DSA Challenge</title>
+    <title>DSA Tracker</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>75 Day DSA Challenge</h1>
-        <table>
+        <h1>DSA Question Tracker</h1>
+        <table id="daysTable">
             <thead>
                 <tr>
                     <th>Day</th>
@@ -18,10 +18,11 @@
                     <th>Completed</th>
                 </tr>
             </thead>
-            <tbody id="daysTable"></tbody>
+            <tbody>
+                <!-- Rows will be generated dynamically by JavaScript -->
+            </tbody>
         </table>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
